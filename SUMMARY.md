@@ -103,6 +103,6 @@
   * [정규식 활용](tip/undefined.md)
   * [DFS/BFS 탐색 구분](tip/dfs-bfs.md)
   * [2차원 배열 선언](tip/2.md)
-  * [배열 생성 및 채우기](tip/undefined-1.md)
-  * [배열 중복값 제거하기](tip/undefined-2.md)
+  * [배열 생성 및 채우기](<tip/undefined (1).md>)
+  * [배열 중복값 제거하기](tip/undefined-1.md)
   * [최소공배수(LCM) / 최대공약수(GCD)](tip/lcm-gcd.md)
