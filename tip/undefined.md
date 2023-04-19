@@ -1,31 +1,57 @@
-# 배열 생성 및 채우기
+# 정규식 활용
 
-### 하나의 수로 배열 채우기
+### 숫자 체크
 
-```javascript
-let n = 15;
-let arr = new Array(n).fill(0);
-console.log(arr) // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-```
+<pre class="language-javascript"><code class="lang-javascript">something.match(/\d/)
+<strong>something.match(/[0-9]/)
+</strong></code></pre>
 
-### 1부터 정해진 수까지 채우기
+### 숫자+영어소문자
 
 ```javascript
-let n = 15;
-let arr = Array.from(new Array(n), (x, i) => i + 1);
-console.log(arr) // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+something.match(/[a-z0-9]/)
 ```
 
-### 0부터 정해진 수까지 채우기
+### 숫자+영어소문자+대문자
 
 ```javascript
-let n = 15;
-let arr = Array.from(Array(n).keys());
-console.log(arr); // [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+something.match(/[a-zA-Z0-9]/)
 ```
 
+### 영어소문자+대문자&#x20;
+
 ```javascript
-let n = 15;
-let arr = [...Array(n)].map((x, i) => i);
-console.log(arr); // [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+something.match(/[A-z]/g)
 ```
+
+### 문자열 시작 조건
+
+```javascript
+something.match(/^[A-Z]/)
+```
+
+**시작 조건**을 줄 때 `^` 를 앞에 붙여주면 된다.
+
+위의 코드의 경우 문자열 시작이 영어 대문자로 시작한다는 의미이다.
+
+### 자리수 제한
+
+```javascript
+/[0-9]{5,10}$/
+```
+
+\= (1) 숫자만 입력 가능하고, (2) 5\~10자리로 제한한다는 의미
+
+
+
+### 추가 정규식
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+**참고**
+
+[https://fabric004.tistory.com/20](https://fabric004.tistory.com/20)
